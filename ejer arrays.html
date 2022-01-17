@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Ejercicios arrays</h3>
+
+    <div id="area_resultado">
+
+
+
+    </div>
+    
+
+
+    <script>
+        
+        /*
+        // ejercicio 1
+        let uno=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre'];
+        let resultado='';
+        for (let i=0;i<10;i++){
+            resultado=resultado+uno[i]+'\n';
+            document.getElementById('area_resultado').innerHTML +=`
+            <p>${uno[i]}</p>
+            `
+        }
+        window.alert(resultado);
+        */
+
+        
+
+        /*
+        // ejercicio 2
+        let cadena=window.prompt('dame un string ...');
+        let resultado=[];
+        let aimprimir='';
+        resultado[1]=cadena;
+        cadena=window.prompt('dame un string ...');
+        resultado[2]=cadena;
+        cadena=window.prompt('dame un string ...');
+        resultado[0]=cadena;
+        for (let i=0;i<resultado.length;i++){
+            aimprimir=aimprimir+resultado[i]+'\n';
+            document.getElementById('area_resultado').innerHTML +=`
+            <p>${resultado[i]}</p>
+            `
+        }
+        window.alert(aimprimir);
+        */
+
+        /*
+        // ejercicio 3
+        let cadena=[];
+        let resultado='';
+        for ( let i=20;i>=11;i--){
+            cadena.push(i);
+        }
+        for (let i=0; i<=9; i++){
+            resultado=resultado+cadena[i]+'\n';
+            document.getElementById('area_resultado').innerHTML +=`
+            <p>${cadena[i]}</p>
+            `
+        }
+        window.alert(resultado);
+        */
+
+        /*
+        // ejercicio 4
+        let cadena=[];
+        let caracter='';
+        let resultado='';
+        for (let i=0;i<=9;i++){
+            caracter=window.prompt('dame un string ... n.'+(i+1)+' ...');
+            cadena[i]=caracter;
+        }
+        for (let i=0; i<=9; i++){
+            resultado=resultado+cadena[i]+'\n';
+            document.getElementById('area_resultado').innerHTML +=`
+            <p>${cadena[i]}</p>
+            `
+        }
+        window.alert(resultado);
+        */
+
+        
+        
+        /*
+        // ejercicio 5
+        let meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        let valor=parseInt(window.prompt('Dime un numero del 1 al 12 ...'));
+        window.alert('El mes correspondiente al numero dado es '+meses[valor-1]);
+        document.getElementById('area_resultado').innerHTML +=`
+            <p>El mes correspondiente al numero dado es ${meses[valor-1]}</p>
+            `
+        */
+
+        /*
+        // ejercicio 6
+        let cadena=[];
+        let valor=0;
+        let petit=999999999999999999999;
+        for (let i=0; i<=2;i++){
+            valor=parseInt(window.prompt('Dime un numero entero ...'));
+            cadena[i]=valor;
+        }
+        for (let i=0;i<=2;i++){
+            if (cadena[i]<petit){
+                petit=cadena[i];
+            }
+        }
+        window.alert('El valor mas pequeño es '+petit);
+        document.getElementById('area_resultado').innerHTML +=`
+            <p>El valor mas pequeño es ${petit}</p>
+            `
+        */
+        
+        /*
+        // ejercicio 7
+        let cadena=[11,22,33,44,55,66,77,88,99,111];
+        let suma=0;
+        for (let i=0; i<=9; i++){
+            suma=suma+cadena[i];
+        }
+        window.alert('la media de los valores del array es : '+(suma/10));
+        document.getElementById('area_resultado').innerHTML +=`
+            <p>la media de los valores del array es : ${(suma/10)}</p>
+            `
+        */
+
+        
+        /*
+        // ejercicio 8
+        let cadena=[18,19,20,21,22,23,24,25,25,26,27,28,29,30,31,32,33,34,35,18,28];
+        let suma=0;
+        for (let i=0; i<=19; i++){
+            suma=suma+cadena[i];
+        }
+        window.alert('la media de la edad es : '+(suma/20));
+        document.getElementById('area_resultado').innerHTML +=`
+            <p>la media de la edad es : ${(suma/20)}</p>
+            `
+        */
+
+
+        /*
+        // ejercicio 9
+        let cadena=[1,1,1,1,1,1,1,1,1,1];
+        let orden=0;
+        let resultado='El contenido final de la array es ...\n';
+        do{
+            orden=parseInt(window.prompt('Dame el orden de la array que quieres consultar (de 0 a 9)...'));
+            if ((orden>=0 && orden<=9)){
+                window.alert('El valor del orden pedido es  '+cadena[orden]+' se modifica por ... '+ cadena[orden]*2);
+                document.getElementById('area_resultado').innerHTML +=`
+                <p>El valor del orden pedido es  ${cadena[orden]} se modifica por ... ${(cadena[orden]*2)}</p>
+                `
+                cadena[orden]=cadena[orden]*2;
+            }
+        } while (orden>=0 && orden<=9);
+        document.getElementById('area_resultado').innerHTML +=`
+            <p>El contenido final de la array es ...</p>
+            `
+        for (let i=0; i<=9;i++){
+            resultado=resultado+'posición ... '+i+' valor ... '+cadena[i]+'\n';
+            document.getElementById('area_resultado').innerHTML +=`
+            <p>posición ... ${i} valor ... ${cadena[i]}</p>
+            `
+        }
+        window.alert(resultado);
+        */
+
+
+    </script>
+</body>
+</html>
